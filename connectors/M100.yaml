@@ -1,101 +1,66 @@
 pins:
-  - id: C9
+  - id: B3
     class: outputs
     ts_name: IGN1
     type: high_logic
-  - id: C8
+  - id: B4
     class: outputs
     ts_name: IGN2
     type: high_logic
-  - id: C7
+  - id: B5
     class: outputs
     ts_name: IGN3
     type: high_logic
-  - id: C6
+  - id: B6
     class: outputs
     ts_name: IGN4
     type: high_logic
-  - id: D15
-    class: outputs
-    ts_name: IGN5
-    type: high_logic
-  - id: D14
-    class: outputs
-    ts_name: IGN6
-    type: high_logic
-  - id: D13
-    class: outputs
-    ts_name: IGN7
-    type: high_logic
-  - id: D12
-    class: outputs
-    ts_name: IGN8
-    type: high_logic
-  - id: D6
+  - id: E9
     class: outputs
     ts_name: INJ1
     type: ls
-  - id: D5
+  - id: E11
     class: outputs
     ts_name: INJ2
     type: ls
-  - id: A15
+  - id: E10
     class: outputs
     ts_name: INJ3
     type: ls
-  - id: D3
+  - id: E11
     class: outputs
     ts_name: INJ4
     type: ls
-  - id: A11
-    class: outputs
-    ts_name: INJ5
-    type: ls
-  - id: A10
-    class: outputs
-    ts_name: INJ6
-    type: ls
-  - id: A9
-    class: outputs
-    ts_name: INJ7
-    type: ls
-  - id: A8
-    class: outputs
-    ts_name: INJ8
-    type: ls
   - class: switch_inputs
-    id: E11
+    id: D4
     ts_name: ISO Digital IN1
     type: din
   - class: switch_inputs
-    id: E12
+    id: D8
     ts_name: ISO Digital IN2
     type: din
   - class: switch_inputs
-    id: E13
+    id: E4
     ts_name: ISO Digital IN3
     type: din
-  - class: switch_inputs
-    id: E14
-    ts_name: ISO Digital IN4
   - class: event_inputs
-    id: E8
+    id: E1
     ts_name: HALL1-VR1
     type: din
   - class: event_inputs
-    id: E7
+    id: E0
     ts_name: HALL2-VR2
     type: din
   - class: event_inputs
-    id: E9
+    id: E2
     ts_name: HALL3-VR3
     type: din
   - class: outputs
-    id: E0
+    id: E3
     ts_name: Fuel Pump CTRL
     type: ls
   - class: outputs
-    id: E1
+    id: E6
     ts_name: Fan CTRL
     type: ls
   - class: outputs
@@ -103,15 +68,15 @@ pins:
     ts_name: TACH Out
     type: ls
   - class: outputs
-    id: B6
+    id: E15
     ts_name: Idle 2 CTRL
     type: ls
   - class: outputs
-    id: B9
+    id: D7
     ts_name: Idle 1 CTRL
     type: ls
   - class: outputs
-    id: B7
+    id: D6
     ts_name: Spare 1 Out
     type: ls
   - class: outputs
@@ -119,8 +84,8 @@ pins:
     ts_name: Spare 2 Out
     type: ls
   - class: outputs
-    id: B5
-    ts_name: Spare 2 Out
+    id: E14
+    ts_name: Spare 3 Out
     type: ls
   - class: analog_inputs
     id: EFI_ADC_14
