@@ -80,7 +80,7 @@ pins:
     ts_name: Spare 1 Out
     type: ls
   - class: outputs
-    id: B4
+    id: B7
     ts_name: Spare 2 Out
     type: ls
   - class: outputs
@@ -105,23 +105,23 @@ pins:
     type: av
   - class: analog_inputs
     id: EFI_ADC_10
-    ts_name: AV1
+    ts_name: TPS1
     type: av
   - class: analog_inputs
     id: EFI_ADC_11
-    ts_name: AV2
+    ts_name: TPS2
     type: av
   - class: analog_inputs
     id: EFI_ADC_12
-    ts_name: A_Temp2
+    ts_name: PPS1
     type: av
   - class: analog_inputs
     id: EFI_ADC_13
-    ts_name: AV4
+    ts_name: PPS2
     type: av
   - class: analog_inputs
     id: EFI_ADC_0
-    ts_name: AV5
+    ts_name: IAT
     type: av
   - class: analog_inputs
     id: EFI_ADC_1
@@ -129,15 +129,15 @@ pins:
     type: av
   - class: analog_inputs
     id: EFI_ADC_2
-    ts_name: AV7
+    ts_name: Ain1
     type: av
   - class: analog_inputs
     id: EFI_ADC_3
-    ts_name: AV8
+    ts_name: MAP
     type: av
   - class: analog_inputs
     id: EFI_ADC_4
-    ts_name: AV9
+    ts_name: CLT
     type: av
   - class: analog_inputs
     id: EFI_ADC_5
@@ -145,9 +145,9 @@ pins:
     type: av
   - class: analog_inputs
     id: EFI_ADC_6
-    ts_name: AV11
+    ts_name: Vbatt
     type: av
   - class: analog_inputs
     id: EFI_ADC_7
-    ts_name: BattVolt
+    ts_name: Baro
     type: av
