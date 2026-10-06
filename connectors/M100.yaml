@@ -132,7 +132,7 @@ pins:
     ts_name: Ain1
     type: av
   - class: analog_inputs
-    id: A3
+    id: EFI_ADC_3
     ts_name: MAP
     type: av
   - class: analog_inputs
