@@ -27,7 +27,7 @@ pins:
     class: outputs
     ts_name: INJ3
     type: ls
-  - id: E11
+  - id: E12
     class: outputs
     ts_name: INJ4
     type: ls
