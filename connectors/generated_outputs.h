@@ -4,38 +4,26 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS[] = {
-	Gpio::D6, // INJ1
-	Gpio::D5, // INJ2
-	Gpio::A15, // INJ3
-	Gpio::D3, // INJ4
-	Gpio::A11, // INJ5
-	Gpio::A10, // INJ6
-	Gpio::A9, // INJ7
-	Gpio::A8, // INJ8
-	Gpio::E0, // Fuel Pump CTRL
-	Gpio::E1, // Fan CTRL
+	Gpio::E9, // INJ1
+	Gpio::E11, // INJ2
+	Gpio::E10, // INJ3
+	Gpio::E12, // INJ4
+	Gpio::E3, // Fuel Pump CTRL
+	Gpio::E6, // Fan CTRL
 	Gpio::B8, // TACH Out
-	Gpio::B6, // Idle 2 CTRL
-	Gpio::B9, // Idle 1 CTRL
-	Gpio::B7, // Spare 1 Out
-	Gpio::B4, // Spare 2 Out
-	Gpio::B5, // Spare 2 Out
-	Gpio::C9, // IGN1
-	Gpio::C8, // IGN2
-	Gpio::C7, // IGN3
-	Gpio::C6, // IGN4
-	Gpio::D15, // IGN5
-	Gpio::D14, // IGN6
-	Gpio::D13, // IGN7
-	Gpio::D12, // IGN8
+	Gpio::E15, // Idle 2 CTRL
+	Gpio::D7, // Idle 1 CTRL
+	Gpio::D6, // Spare 1 Out
+	Gpio::B7, // Spare 2 Out
+	Gpio::E14, // Spare 3 Out
+	Gpio::B3, // IGN1
+	Gpio::B4, // IGN2
+	Gpio::B5, // IGN3
+	Gpio::B6, // IGN4
 // "INJ1",
 // "INJ2",
 // "INJ3",
 // "INJ4",
-// "INJ5",
-// "INJ6",
-// "INJ7",
-// "INJ8",
 // "Fuel Pump CTRL",
 // "Fan CTRL",
 // "TACH Out",
@@ -43,13 +31,9 @@ Gpio GENERATED_OUTPUTS[] = {
 // "Idle 1 CTRL",
 // "Spare 1 Out",
 // "Spare 2 Out",
-// "Spare 2 Out",
+// "Spare 3 Out",
 // "IGN1",
 // "IGN2",
 // "IGN3",
 // "IGN4",
-// "IGN5",
-// "IGN6",
-// "IGN7",
-// "IGN8",
 }

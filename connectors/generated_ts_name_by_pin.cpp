@@ -6,68 +6,50 @@
 // see comments at declaration in pin_repository.h
 const char* getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch (brainPin) {
-		case Gpio::A10:
-			return "INJ6";
-		case Gpio::A11:
-			return "INJ5";
-		case Gpio::A15:
-			return "INJ3";
-		case Gpio::A8:
-			return "INJ8";
-		case Gpio::A9:
-			return "INJ7";
+		case Gpio::B3:
+			return "IGN1";
 		case Gpio::B4:
-			return "Spare 2 Out";
+			return "IGN2";
 		case Gpio::B5:
-			return "Spare 2 Out";
+			return "IGN3";
 		case Gpio::B6:
-			return "Idle 2 CTRL";
+			return "IGN4";
 		case Gpio::B7:
-			return "Spare 1 Out";
+			return "Spare 2 Out";
 		case Gpio::B8:
 			return "TACH Out";
-		case Gpio::B9:
-			return "Idle 1 CTRL";
-		case Gpio::C6:
-			return "IGN4";
-		case Gpio::C7:
-			return "IGN3";
-		case Gpio::C8:
-			return "IGN2";
-		case Gpio::C9:
-			return "IGN1";
-		case Gpio::D12:
-			return "IGN8";
-		case Gpio::D13:
-			return "IGN7";
-		case Gpio::D14:
-			return "IGN6";
-		case Gpio::D15:
-			return "IGN5";
-		case Gpio::D3:
-			return "INJ4";
-		case Gpio::D5:
-			return "INJ2";
-		case Gpio::D6:
-			return "INJ1";
-		case Gpio::E0:
-			return "Fuel Pump CTRL";
-		case Gpio::E1:
-			return "Fan CTRL";
-		case Gpio::E11:
+		case Gpio::D4:
 			return "ISO Digital IN1";
-		case Gpio::E12:
+		case Gpio::D6:
+			return "Spare 1 Out";
+		case Gpio::D7:
+			return "Idle 1 CTRL";
+		case Gpio::D8:
 			return "ISO Digital IN2";
-		case Gpio::E13:
-			return "ISO Digital IN3";
-		case Gpio::E14:
-			return "ISO Digital IN4";
-		case Gpio::E7:
+		case Gpio::E0:
 			return "HALL2-VR2";
-		case Gpio::E8:
+		case Gpio::E1:
 			return "HALL1-VR1";
-		case Gpio::E9:
+		case Gpio::E10:
+			return "INJ3";
+		case Gpio::E11:
+			return "INJ2";
+		case Gpio::E12:
+			return "INJ4";
+		case Gpio::E14:
+			return "Spare 3 Out";
+		case Gpio::E15:
+			return "Idle 2 CTRL";
+		case Gpio::E2:
 			return "HALL3-VR3";
+		case Gpio::E3:
+			return "Fuel Pump CTRL";
+		case Gpio::E4:
+			return "ISO Digital IN3";
+		case Gpio::E6:
+			return "Fan CTRL";
+		case Gpio::E9:
+			return "INJ1";
 		default:
 			return nullptr;
 	}
