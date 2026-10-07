@@ -22,11 +22,11 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->triggerInputPins[0] = Gpio::D3;
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
-//	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
+	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 
-//	engineConfiguration->clt.adcChannel = EFI_ADC_1;
+	engineConfiguration->clt.adcChannel = EFI_ADC_4;
 
-//	engineConfiguration->iat.adcChannel = EFI_ADC_2;
+	engineConfiguration->iat.adcChannel = EFI_ADC_0;
 
 
     	// 5.6k high side/10k low side = 1.56 ratio divider
@@ -52,7 +52,8 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->spi3mosiPin = Gpio::C12;
 
 	// Battery sense on PA0
-//	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
+	engineConfiguration->vbattAdcChannel = EFI_ADC_6;
+	
 }
 
 void setup_custom_board_overrides() {
