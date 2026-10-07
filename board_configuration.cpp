@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "board_overrides.h"
+#include "meta.h"
 
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
