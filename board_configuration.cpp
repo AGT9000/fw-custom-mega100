@@ -19,7 +19,7 @@ static void customBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
-	engineConfiguration->triggerInputPins[0] = Gpio::D3;
+	// engineConfiguration->triggerInputPins[0] = Gpio::D3;
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
@@ -27,6 +27,8 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->clt.adcChannel = EFI_ADC_4;
 
 	engineConfiguration->iat.adcChannel = EFI_ADC_0;
+
+	engineConfiguration->tps1_1AdcChannel = EFI_ADC_10;
 
 
     	// 5.6k high side/10k low side = 1.56 ratio divider
