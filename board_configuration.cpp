@@ -38,7 +38,17 @@ static void customBoardDefaultConfiguration() {
 
 	engineConfiguration->clt.config.bias_resistor = 2490;
 	engineConfiguration->iat.config.bias_resistor = 2490;
+	
+	engineConfiguration->canTxPin = Gpio::D1;
+	engineConfiguration->canRxPin = Gpio::D0;
 
+	engineConfiguration->sdCardSpiDevice = SPI_DEVICE_3;
+	engineConfiguration->sdCardCsPin = Gpio::D2;
+
+	engineConfiguration->is_enabled_spi_3 = true;
+	engineConfiguration->spi3sckPin = Gpio::C10;
+	engineConfiguration->spi3misoPin = Gpio::C11;
+	engineConfiguration->spi3mosiPin = Gpio::C12;
 
 	// Battery sense on PA0
 //	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
