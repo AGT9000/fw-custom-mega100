@@ -36,8 +36,8 @@ static void customBoardDefaultConfiguration() {
 
 	engineConfiguration->adcVcc = 3.3f;
 
-//	engineConfiguration->clt.config.bias_resistor = 2490;
-//	engineConfiguration->iat.config.bias_resistor = 2490;
+	engineConfiguration->clt.config.bias_resistor = 2490;
+	engineConfiguration->iat.config.bias_resistor = 2490;
 
 
 	// Battery sense on PA0
