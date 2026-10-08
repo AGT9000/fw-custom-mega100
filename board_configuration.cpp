@@ -42,12 +42,20 @@ static void setIgnitionPins() {
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
+	engineConfiguration->injectionPins[0] = Gpio::E9;
+	engineConfiguration->injectionPins[1] = Gpio::E11;
+	engineConfiguration->injectionPins[2] = Gpio::E10;
+	engineConfiguration->injectionPins[3] = Gpio::E12;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
+	engineConfiguration->ignitionPins[0] = Gpio::B3;
+	engineConfiguration->ignitionPins[1] = Gpio::B4;
+	engineConfiguration->ignitionPins[2] = Gpio::B5;
+	engineConfiguration->ignitionPins[0] = Gpio::B6;
 
 	// engineConfiguration->triggerInputPins[0] = Gpio::D3;
 
-	setInjectorPins();
-	setIgnitionPins();
+	//setInjectorPins();
+	//setIgnitionPins();
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
