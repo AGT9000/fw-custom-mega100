@@ -31,12 +31,23 @@ Gpio getWarningLedPin() {
 	return Gpio::Unassigned;
 }
 
+static void setInjectorPins() {
+	copyArray(engineConfiguration->injectionPins, injPins);
+}
+
+static void setIgnitionPins() {
+	copyArray(engineConfiguration->ignitionPins, ignPins);
+}
+
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
 	// engineConfiguration->triggerInputPins[0] = Gpio::D3;
+
+	setInjectorPins();
+	setIgnitionPins();
 	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
 
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
