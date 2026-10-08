@@ -29,7 +29,7 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->ignitionPins[0] = Gpio::B3;
 	engineConfiguration->ignitionPins[1] = Gpio::B4;
 	engineConfiguration->ignitionPins[2] = Gpio::B5;
-	engineConfiguration->ignitionPins[0] = Gpio::B6;
+	engineConfiguration->ignitionPins[3] = Gpio::B6;
 
 	// engineConfiguration->triggerInputPins[0] = Gpio::D3;
 
