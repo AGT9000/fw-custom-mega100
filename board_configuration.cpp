@@ -3,21 +3,6 @@
 
 
 
-static const brain_pin_e injPins[] = {
-    Gpio::E9,
-	Gpio::E11,
-	Gpio::E10,
-	Gpio::E12,
-	
-};
-
-static const brain_pin_e ignPins[] = {
-	Gpio::B3,
-	Gpio::B4,
-	Gpio::B5,
-	Gpio::B6,
-	
-};
 
 Gpio getCommsLedPin() {
 	return Gpio::Unassigned;
