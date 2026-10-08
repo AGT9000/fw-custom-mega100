@@ -16,13 +16,7 @@ Gpio getWarningLedPin() {
 	return Gpio::Unassigned;
 }
 
-static void setInjectorPins() {
-	copyArray(engineConfiguration->injectionPins, injPins);
-}
 
-static void setIgnitionPins() {
-	copyArray(engineConfiguration->ignitionPins, ignPins);
-}
 
 // board-specific configuration setup
 static void customBoardDefaultConfiguration() {
