@@ -44,13 +44,15 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->iat.adcChannel = EFI_ADC_0;
 
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_10;
-
+		// Battery sense on PA6
+	engineConfiguration->vbattAdcChannel = EFI_ADC_6;
 
     	// 5.6k high side/10k low side = 1.56 ratio divider
-    	engineConfiguration->analogInputDividerCoefficient = 1.47f;
+    	
+	engineConfiguration->analogInputDividerCoefficient = 1.56f;
 
     	// 6.34k high side/ 1k low side
-//    	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
+    engineConfiguration->vbattDividerCoeff = 7.50f;
 
 	engineConfiguration->adcVcc = 3.3f;
 
@@ -68,8 +70,11 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->spi3misoPin = Gpio::C11;
 	engineConfiguration->spi3mosiPin = Gpio::C12;
 
-	// Battery sense on PA0
-	engineConfiguration->vbattAdcChannel = EFI_ADC_6;
+	//engineConfiguration->mainRelayPin = Gpio::MM100_IGN7;
+ 	engineConfiguration->fanPin = Gpio::E3;
+	engineConfiguration->fuelPumpPin = Gpio::E6;
+
+
 	
 }
 
