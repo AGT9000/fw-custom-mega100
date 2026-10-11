@@ -41,6 +41,8 @@ static void customBoardDefaultConfiguration() {
 	//setIgnitionPins();
 	engineConfiguration->triggerInputPins[1] = Gpio::E1;
 
+	//engineConfiguration->trigger.type = (trigger_type_e) value;
+
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 
 	engineConfiguration->clt.adcChannel = EFI_ADC_4;
