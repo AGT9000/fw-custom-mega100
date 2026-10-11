@@ -35,11 +35,11 @@ static void customBoardDefaultConfiguration() {
 	// Default tacho out
 	engineConfiguration->tachOutputPin = Gpio::D5;
 
-	// engineConfiguration->triggerInputPins[0] = Gpio::D3;
+	engineConfiguration->triggerInputPins[0] = Gpio::E0;
 
 	//setInjectorPins();
 	//setIgnitionPins();
-	engineConfiguration->triggerInputPins[1] = Gpio::Unassigned;
+	engineConfiguration->triggerInputPins[1] = Gpio::E1;
 
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_3;
 
@@ -75,8 +75,8 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->spi3mosiPin = Gpio::C12;
 
 	//engineConfiguration->mainRelayPin = Gpio::MM100_IGN7;
- 	engineConfiguration->fanPin = Gpio::E3;
-	engineConfiguration->fuelPumpPin = Gpio::E6;
+ 	engineConfiguration->fanPin = Gpio::E6;
+	engineConfiguration->fuelPumpPin = Gpio::E3;
 
 
 	
