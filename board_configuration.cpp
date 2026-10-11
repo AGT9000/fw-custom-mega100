@@ -30,6 +30,10 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->ignitionPins[1] = Gpio::B4;
 	engineConfiguration->ignitionPins[2] = Gpio::B5;
 	engineConfiguration->ignitionPins[3] = Gpio::B6;
+	// Default idle out pin
+	engineConfiguration->idle.solenoidPin = Gpio::E14;
+	// Default tacho out
+	engineConfiguration->tachOutputPin = Gpio::D5;
 
 	// engineConfiguration->triggerInputPins[0] = Gpio::D3;
 
